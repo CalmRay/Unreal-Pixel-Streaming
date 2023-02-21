@@ -50,7 +50,7 @@ resource "random_string" "base_id" {
   length  = 5
   special = false
   upper   = false
-  number  = true
+  numeric  = true
 }
 
 data "azurerm_client_config" "current" {}
@@ -77,7 +77,8 @@ resource "azurerm_key_vault" "akv" {
 
   access_policy {
     tenant_id = data.azurerm_client_config.current.tenant_id
-    object_id = data.azurerm_client_config.current.object_id
+    #object_id = data.azurerm_client_config.current.object_id
+    object_id = "93987e1c-d6a8-465c-b772-5c8f182c39dc"
 
     key_permissions = [
       "create",
