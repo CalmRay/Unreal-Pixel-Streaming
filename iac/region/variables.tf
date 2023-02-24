@@ -65,7 +65,7 @@ variable "matchmaker_vm_storage_account_type" {
 variable "vmss_size" {
   #default = "Standard_NV6"
   #default = "Standard_NV12s_v3"
-  default = "Standard_NV4as_v4"
+  default = "Standard_NC6s_v3"
 }
 
 #MSFT created an image in the marketplace that has all the pre-reqs install on Windows 10 for the MM and SS VMs.
