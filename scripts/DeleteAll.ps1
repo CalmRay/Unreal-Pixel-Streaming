@@ -21,7 +21,7 @@ $vnetname = "jumpbox-vnet"
 $r1 = $rootvariable + "-eastus-unreal-rg"
 az group delete --name $r1 --no-wait --yes
 
-$r2 = $rootvariable + "-westeurope-unreal-rg"
+$r2 = $rootvariable + "-northeurope-unreal-rg"
 az group delete --name $r2 --no-wait --yes
 
 $r3 = $rootvariable + "-westus-unreal-rg"
