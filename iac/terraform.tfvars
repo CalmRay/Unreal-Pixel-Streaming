@@ -4,7 +4,7 @@
 deployment_regions = {
   
   westeurope-unreal-rg = {
-    location                = "westeurope"
+    location                = "northeurope"
     vnet_address_space      = "10.103.0.0/16"
     subnet_address_prefixes = "10.103.0.0/22"
   }
